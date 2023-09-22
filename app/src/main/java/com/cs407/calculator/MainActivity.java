@@ -67,12 +67,12 @@ public class MainActivity extends AppCompatActivity {
         String numberThree = myTextField.getText().toString();
         String numberFour= secondTextField.getText().toString();
 
-        int intNum3 = Integer.parseInt(numberThree);
-        int intNum4 = Integer.parseInt(numberFour);
+        double intNum3 = Double.parseDouble(numberThree);
+        double intNum4 = Double.parseDouble(numberFour);
 
 
         if(intNum4 !=0){
-            int divide = intNum3/intNum4;
+            double divide = intNum3/intNum4;
             goToActivity(String.valueOf(divide));
         }else{
             Toast.makeText(MainActivity.this,"Can not divide by zero, try again", Toast.LENGTH_LONG).show();
